@@ -1,0 +1,151 @@
+/* ******** Navigation Bar ******** */
+nav {
+  background: linear-gradient(90deg, #4b6cb7, #182848); /* Gradiente moderno */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px; /* Espaciado amplio */
+  border-bottom: 2px solid #ddd; /* Línea sutil debajo */
+  font-family: 'Arial', sans-serif; /* Fuente clara */
+}
+
+nav > h2 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px; /* Espaciado entre elementos */
+  list-style: none;
+}
+
+.nav-list li {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-list li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+  transform: translateY(-3px); /* Elevación */
+  cursor: pointer;
+}
+
+/* ******** Items List ******** */
+.items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Diseño responsive */
+  gap: 20px;
+  justify-items: center;
+  margin: 40px auto;
+  width: 80%;
+}
+
+/* ******** Item Box ******** */
+.item-box {
+  background: #f3f4f6;
+  padding: 25px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-box:hover {
+  transform: scale(1.05); /* Ampliación ligera */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Más profundidad */
+}
+
+.item-quantity {
+  color: #fff;
+  background: #ff5722; /* Naranja vibrante */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.item-price {
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ******** Buttons ******** */
+.item-add-button,
+.item-minus-button,
+.item-plus-button {
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.item-add-button {
+  background: #28a745; /* Verde */
+}
+
+.item-add-button:hover {
+  background: #218838;
+}
+
+.item-minus-button {
+  background: #dc3545; /* Rojo */
+}
+
+.item-minus-button:hover {
+  background: #c82333;
+}
+
+.item-plus-button {
+  background: #007bff; /* Azul */
+}
+
+.item-plus-button:hover {
+  background: #0056b3;
+}
+
+/* ******** Shopping Cart ******** */
+.cart-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.cart-count {
+  background: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.cart-count:hover {
+  transform: rotate(10deg) scale(1.1); /* Rotación y ampliación */
+}
+
